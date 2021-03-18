@@ -256,7 +256,7 @@ for n in range(50,500,50):
         
 
 
-for n in range(2,10,1):
+for n in range(50,500,50):
     try:
         A= np.random.rand(n,n)
         B= np.random.rand(n)
