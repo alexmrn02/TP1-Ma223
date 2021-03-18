@@ -217,13 +217,14 @@ y2 = TempsGP
 x3 = IndicesGT
 y3 = TempsGT
 
-plt.plot(x,y,color='red')
-plt.plot(x1,y1,color='green')
-plt.plot(x2,y2,color="blue")
-plt.plot(x3,y3,color="yellow")
+plt.plot(x,y,color='red', label='Gauss')
+plt.plot(x1,y1,color='green', label='LU')
+plt.plot(x2,y2,color="blue", label='Pivot Partiel')
+plt.plot(x3,y3,color="yellow", label='Pivot Total')
 plt.xlabel('dimension')
 plt.ylabel('temps(secondes)')
 plt.title("Temps en fonction de la dimension de la matrice")
+plt.legend()
 plt.show()
 
 
@@ -307,11 +308,12 @@ x2e = IndicesGP
 y2e = ErreurGP
 x3e = IndicesGT
 y3e = ErreurGT
-plt.plot(xe,ye,color='red')
-plt.plot(x1e,y1e,color='green')
-plt.plot(x2e,y2e,color='blue')
-plt.plot(x3e,y3e,color='yellow')
+plt.plot(xe,ye,color='red', label='Gauss')
+plt.plot(x1e,y1e,color='green', label='LU')
+plt.plot(x2e,y2e,color='blue', label='Pivot Partiel')
+plt.plot(x3e,y3e,color='yellow', label='Pivot Total')
 plt.xlabel('dimension')
 plt.ylabel('normes(erreurs)')
 plt.title("Erreur en fonction de la dimension de la matrice")
+plt.legend()
 plt.show()
